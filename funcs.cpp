@@ -12,12 +12,14 @@ bool isDivisble(int a, int b){
 }
 
 bool isPrime(int n){
+    if(n >= 2){
     for(int i = 2;i < n-1; i++){
         if(isDivisble(n, i) == true){
             return false;
         }
     }
     return true;
+    }
 }
 
 int nextPrime(int n){
