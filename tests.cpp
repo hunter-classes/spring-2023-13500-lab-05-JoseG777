@@ -29,9 +29,17 @@ TEST_CASE("CHECKING nextPrime"){
 }
 
 TEST_CASE("CHECKING countPrimes"){
-    CHECK(countPrimes(8) == 11);
-    CHECK(countPrimes(11) == 13);
-    CHECK(countPrimes(13) == 17);
-    CHECK(countPrimes(4) == 5);
+    CHECK(countPrimes(8, 11) == 1);
+    CHECK(countPrimes(11, 29) == 6);
+    CHECK(countPrimes(13, 100) == 20);
+    CHECK(countPrimes(4, 10) == 2);
+
+}
+
+TEST_CASE("CHECKING isTwinPrime"){
+    CHECK(isTwinPrime(11) == true);
+    CHECK(isTwinPrime(29) == true);
+    CHECK(isTwinPrime(100) == false);
+    CHECK(isTwinPrime(9) == false);
 
 }

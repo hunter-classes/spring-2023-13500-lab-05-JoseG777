@@ -32,7 +32,7 @@ int nextPrime(int n){
 
 int countPrimes(int a, int b){
     int count = 0;
-    for(int k = a; k < b; k++){
+    for(int k = a; k <= b; k++){
         if(isPrime(k)==true){
             count += 1;
         }
@@ -65,7 +65,7 @@ int nextTwinPrime(int n){
 int largestTwinPrime(int a, int b){
     int n;
     int m = b;
-    while(isTwinPrime(m) == false and m > a){
+    while(isTwinPrime(m) == false and m >= a){
         m = m - 1;
     }
     if(isTwinPrime(m) == false){
