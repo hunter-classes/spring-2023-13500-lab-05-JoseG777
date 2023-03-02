@@ -20,6 +20,7 @@ bool isPrime(int n){
     }
     return true;
     }
+    return false;
 }
 
 int nextPrime(int n){
