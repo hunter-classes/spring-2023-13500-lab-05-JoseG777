@@ -43,3 +43,11 @@ TEST_CASE("CHECKING isTwinPrime"){
     CHECK(isTwinPrime(9) == false);
 
 }
+
+TEST_CASE("CHECKING largestTwinPrime"){
+    CHECK(largestTwinPrime(1, 31) == 31);
+    CHECK(largestTwinPrime(1, 10000) == 9931);
+    CHECK(largestTwinPrime(1, 10) == 7);
+    CHECK(largestTwinPrime(52, 93) == 73);
+
+}
